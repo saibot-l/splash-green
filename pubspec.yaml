@@ -11,12 +11,12 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   alf_lints:
     git: https://github.com/saibot-l/alf-lints.git
   custom_lint: ^0.6.4
   flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
 
 flutter:
   uses-material-design: true
