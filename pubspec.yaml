@@ -20,4 +20,12 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  assets:
+    - assets/images/space_shooter/bullet.png
+    - assets/images/space_shooter/enemy.png
+    - assets/images/space_shooter/explosion.png
+    - assets/images/space_shooter/spaceship.png
+    - assets/images/space_shooter/stars_0.png
+    - assets/images/space_shooter/stars_1.png
+    - assets/images/space_shooter/stars_2.png
   uses-material-design: true
