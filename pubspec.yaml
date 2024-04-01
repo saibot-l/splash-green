@@ -29,4 +29,5 @@ flutter:
     - assets/images/space_shooter/stars_0.png
     - assets/images/space_shooter/stars_1.png
     - assets/images/space_shooter/stars_2.png
+    - assets/images/splash_green/watercolor_splats.png
   uses-material-design: true
