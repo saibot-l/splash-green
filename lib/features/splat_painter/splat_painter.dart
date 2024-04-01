@@ -1,5 +1,6 @@
 import "dart:async";
 import "dart:math";
+import "dart:ui";
 
 import "package:flame/events.dart";
 import "package:flame/game.dart";
@@ -96,6 +97,6 @@ class SplatPainter extends FlameGame
   void onMouseMove(PointerHoverInfo info) {
     cursor
       ..position = info.eventPosition.widget
-      ..visible = true;
+      ..visible = info.raw.kind == PointerDeviceKind.mouse;
   }
 }
