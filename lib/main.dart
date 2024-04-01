@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
-import "app/klondike_game.dart";
+import "app/splat_painter_canvas.dart";
 
 void main() {
-  runApp(const KlondikeGame());
+  runApp(const SplatPainterCanvas());
 }
