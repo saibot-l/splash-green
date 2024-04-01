@@ -17,6 +17,7 @@ class Cursor extends PositionComponent {
 
   Paint borderPaint;
   Paint innerPaint;
+  bool visible = false;
 
   set color(Color value) {
     borderPaint = borderPaint..color = value.withOpacity(borderOpacity);
@@ -26,6 +27,7 @@ class Cursor extends PositionComponent {
   @override
   void render(Canvas canvas) {
     super.render(canvas);
+    if (!visible) return;
 
     canvas
       ..drawCircle(Offset.zero, 3, innerPaint)
