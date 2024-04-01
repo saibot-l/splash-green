@@ -1,0 +1,10 @@
+name: Non Deployable Branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    name: Static analysis
+    uses: ./.github/workflows/static_analysis.yaml
