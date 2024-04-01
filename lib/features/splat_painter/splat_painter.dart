@@ -94,6 +94,8 @@ class SplatPainter extends FlameGame
 
   @override
   void onMouseMove(PointerHoverInfo info) {
-    cursor.position = info.eventPosition.widget;
+    cursor
+      ..position = info.eventPosition.widget
+      ..visible = true;
   }
 }
