@@ -1,22 +1,23 @@
 import "package:flame/game.dart";
+import "package:flutter/cupertino.dart";
 import "package:flutter/foundation.dart";
-import "package:flutter/material.dart";
 
 import "../features/space_shooter/space_shooter.dart";
 
-class App extends StatefulWidget {
-  const App({super.key});
+class SpaceShooterGame extends StatefulWidget {
+  const SpaceShooterGame({super.key});
 
   @override
-  State<App> createState() => _AppState();
+  State<SpaceShooterGame> createState() => _SpaceShooterGameState();
 }
 
-class _AppState extends State<App> {
+class _SpaceShooterGameState extends State<SpaceShooterGame> {
   late SpaceShooter spaceShooter;
 
   @override
   void initState() {
     super.initState();
+
     spaceShooter = SpaceShooter();
   }
 
@@ -31,6 +32,7 @@ class _AppState extends State<App> {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties.add(DiagnosticsProperty<SpaceShooter>("spaceShooter", spaceShooter));
+    properties
+        .add(DiagnosticsProperty<SpaceShooter>("spaceShooter", spaceShooter));
   }
 }

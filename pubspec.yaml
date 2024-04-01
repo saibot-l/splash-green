@@ -21,6 +21,7 @@ dev_dependencies:
 
 flutter:
   assets:
+    - assets/images/klondike/sprites.png
     - assets/images/space_shooter/bullet.png
     - assets/images/space_shooter/enemy.png
     - assets/images/space_shooter/explosion.png
